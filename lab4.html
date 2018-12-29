@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>White Power</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="laba_4.css">
+    <script type="text/javascript" src="laba_4.js"></script>
+</head>
+
+
+<body oncontextmenu="return false;">
+    <div class="button">
+      <div class="button1"><a  onClick="button1()">Chapter 1</a></div>
+      <div class="button2"><a  onClick="button2()">Chapter 2</a></div>
+      <div class="button3"><a  onClick="button3()">Chapter 3</a></div>
+    </div>
+  
+    <div id="one" style="display:none">
+      <div class="task1">
+  
+        <div class="show">
+          <div class="textField" id="list">
+          </div>
+        </div>
+  
+        <div class="insert">
+          <label class="radioText"><input type="radio" name="positionInList" id="addTop" class="radioButton"> Вверх списка</label>
+          <br/>
+          <label class="radioText"><input type="radio" name="positionInList" id="addBottom" class="radioButton"> Вниз списка</label>
+          <br/>
+          <input type="text" id="typedText" placeholder="Ведите текст...">
+          <br/>
+          <p class="Colors">Выбери цвет фона : </p>
+          <input type="color" id="colorText" value="#04fa11">
+          <br/>
+          <button onclick="getText()" class="enterBlock">Добавить</button>
+          <br/>
+          <button onclick="alertText()" class="statistic">Статистика</button>
+        </div>
+  
+      </div>
+    </div>
+  
+  
+    <div id="two" style="display:none">
+      <div class="tassk2">
+  
+        <div class="show2">
+          <div class="field" id="task2"></div>
+        </div>
+  
+        <div class="insert2">
+          <button onclick="addRectangle()" class="addRect">Добавить</button>
+        </div>
+  
+      </div>
+    </div>
+  
+  
+    <div id="three" style="display:none">
+      <div class="tassk3">
+  
+        <div class="show3">
+          <div id="field3"></div>
+        </div>
+  
+        <div class="insert3">
+            <button onclick="addBlock() " class="addRect ">Добавить</button>
+        </div>
+  
+      </div>
+    </div>
+  
+    
+  </body>
+  </html>
